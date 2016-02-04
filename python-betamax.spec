@@ -3,7 +3,7 @@
 
 Name:           python-%{srcname}
 Version:        0.5.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        %{sum}
 
 %{?python_provide:%python_provide python-%{srcname}}
@@ -64,6 +64,9 @@ much easier.
 %{python3_sitelib}/%{srcname}-%{version}-py3.*.egg-info
 
 %changelog
+* Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 0.5.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
+
 * Mon Dec 21 2015 Parag Nemade <pnemade AT redhat DOT com> - 0.5.1-1
 - Initial packaging
 
