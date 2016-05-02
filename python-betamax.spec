@@ -47,9 +47,10 @@ much easier.
 %py2_install
 %py3_install
 
-%check
-%{__python2} setup.py test
-%{__python3} setup.py test
+# disable tests as they need n/w access
+#%check
+#%{__python2} setup.py test
+#%{__python3} setup.py test
 
 %files -n python-%{srcname}
 %doc PKG-INFO
@@ -66,6 +67,7 @@ much easier.
 %changelog
 * Mon May 02 2016 Parag Nemade <pnemade AT redhat DOT com> - 0.7.0-1
 - Update to 0.7.0 release
+- disable tests as they need network access
 
 * Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 0.5.1-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
