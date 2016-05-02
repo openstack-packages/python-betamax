@@ -2,15 +2,15 @@
 %global sum     A VCR imitation for python-requests
 
 Name:           python-%{srcname}
-Version:        0.5.1
-Release:        2%{?dist}
+Version:        0.7.0
+Release:        1%{?dist}
 Summary:        %{sum}
 
 %{?python_provide:%python_provide python-%{srcname}}
 
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/betamax
-Source0:        https://pypi.python.org/packages/source/b/%{srcname}/%{srcname}-%{version}.tar.gz
+Source0:        https://pypi.python.org/packages/cc/bd/4879257f4d7c44bb3f19b9d48c9b5e5d1f4ea6efab2d4da48c6bd55468ff/%{srcname}-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  python2-devel python3-devel
@@ -64,6 +64,9 @@ much easier.
 %{python3_sitelib}/%{srcname}-%{version}-py3.*.egg-info
 
 %changelog
+* Mon May 02 2016 Parag Nemade <pnemade AT redhat DOT com> - 0.7.0-1
+- Update to 0.7.0 release
+
 * Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 0.5.1-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
 
